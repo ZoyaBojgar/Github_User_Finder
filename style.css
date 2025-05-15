@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  padding: 2rem;
+  margin-top: 10rem;
+  background-color: #1e1e2f;
+  color: #e0e0e0;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  text-align: center;
+}
+.head h1 {
+  font-size: 1.6rem;
+  opacity: 0.7;
+}
+.head p {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+}
+.search .searchplace {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 90%;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  transition: border 0.3s ease;
+}
+.search .searchplace input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+.search button {
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  padding: 1.5rem;
+  width: 100%;
+  background-color: lightgray;
+  height: auto;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 0.9rem;
+}
+.card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.card .avatar {
+  width: 7.1rem;
+  height: 7.1rem;
+  border: 0.1rem solid #03a9f4;
+  border-radius: 50%;
+}
+.card .avatar img {
+  width: 6.9rem;
+  height: 6.87rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (min-width: 1020px) {
+  html {
+    font-size: clamp(16px, 1vw, 20px);
+  }
+  .head h1 {
+    font-size: 2rem;
+  }
+  .head p {
+    font-size: 1rem;
+  }
+  .main {
+    align-items: center;
+  }
+  .search {
+    width: 55%;
+    align-self: center;
+  }
+  .search .searchplace {
+    width: 84%;
+    font-size: 1rem;
+  }
+  .search button {
+    width: 15%;
+    font-size: 1rem;
+  }
+  .card {
+    width: 55%;
+    padding: 2rem;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .card br {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
